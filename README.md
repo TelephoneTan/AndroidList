@@ -3,5 +3,4 @@
 ## 如何改进
 这份代码包含两个活动，分别对应两种列表样式。你可以根据需要切换活动、更改应用名称、更换数据来源API、替换资源文件夹中的图片等资源。
 ## 应用截图
-![应用截图1](/app/src/main/res/drawable/app_s1.jpg)
-![应用截图2](/app/src/main/res/drawable/app_s2.jpg)
+![应用截图1](/app/src/main/res/drawable/app_s1.jpg)![应用截图2](/app/src/main/res/drawable/app_s2.jpg)
