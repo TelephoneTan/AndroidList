@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_bar_height"
+        android:orientation="horizontal"
+        android:background="#6FFF48"
+        android:padding="@dimen/search_bar_padding">
+        <LinearLayout
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="match_parent" android:layout_gravity="center"
+            android:background="@drawable/search_box_border"
+            android:padding="@dimen/search_box_padding"
+            android:layout_marginEnd="@dimen/search_bar_padding">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_gravity="center"
+                android:background="@null"
+                android:inputType="text"
+                android:hint="搜你喜欢的..."
+                />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/search_logo_size"
+            android:layout_height="@dimen/search_logo_size"
+            android:scaleType="fitXY"
+            android:src="@drawable/user"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/search_logo_margin_horizontal"/>
+    </LinearLayout>
+    <fragment
+        android:id="@+id/vp2_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"
+        android:name="com.telephone.zhangxin1761200226.MainActivity2ViewPagerFragment"/>
+</LinearLayout>

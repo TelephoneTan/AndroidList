@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tab_padding">8dp</dimen>
+    <dimen name="tab_font_size">18sp</dimen>
+    <dimen name="image_width">72dp</dimen>
+    <dimen name="image_height">96dp</dimen>
+    <dimen name="search_logo_size">24dp</dimen>
+    <dimen name="search_logo_margin_horizontal">8dp</dimen>
+    <dimen name="bottom_margin">32dp</dimen>
+    <dimen name="search_box_padding">8dp</dimen>
+    <dimen name="search_box_radius">6dp</dimen>
+    <dimen name="search_bar_height">64dp</dimen>
+    <dimen name="tab_layout_padding">8dp</dimen>
+    <dimen name="search_bar_padding">8dp</dimen>
+    <dimen name="video_height">180dp</dimen>
+    <dimen name="news_height">120dp</dimen>
+    <dimen name="video_text_margin">12dp</dimen>
+</resources>

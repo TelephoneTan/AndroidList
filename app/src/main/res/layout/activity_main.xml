@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"
+        android:orientation="vertical">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tab_padding"
+                    android:textSize="@dimen/tab_font_size"
+                    android:text="首页"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tab_padding"
+                    android:textSize="@dimen/tab_font_size"
+                    android:text="分类"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tab_padding"
+                    android:textSize="@dimen/tab_font_size"
+                    android:text="排行"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tab_padding"
+                    android:textSize="@dimen/tab_font_size"
+                    android:text="免费"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tab_padding"
+                    android:textSize="@dimen/tab_font_size"
+                    android:text="包月"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tab_padding"
+                    android:textSize="@dimen/tab_font_size"
+                    android:text="游戏"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tab_padding"
+                    android:textSize="@dimen/tab_font_size"
+                    android:text="写作"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tab_padding"
+                    android:textSize="@dimen/tab_font_size"
+                    android:text="武侠"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tab_padding"
+                    android:textSize="@dimen/tab_font_size"
+                    android:text="玄幻"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tab_padding"
+                    android:textSize="@dimen/tab_font_size"
+                    android:text="修仙"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/tab_padding"
+                    android:textSize="@dimen/tab_font_size"
+                    android:text="言情"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1"
+            android:src="@drawable/logo"
+            android:scaleType="fitXY"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/search_box_border"
+            android:layout_marginHorizontal="@dimen/bottom_margin"
+            android:padding="@dimen/search_box_padding">
+            <ImageView
+                android:layout_width="@dimen/search_logo_size"
+                android:layout_height="@dimen/search_logo_size"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_menu_search" />
+            <EditText
+                android:layout_width="0dp" android:layout_weight="1" android:layout_marginStart="@dimen/search_box_padding"
+                android:layout_height="wrap_content" android:layout_gravity="center"
+                android:background="@null"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/book_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/bottom_margin"
+        />
+
+</LinearLayout>
